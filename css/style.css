@@ -2,7 +2,7 @@
     width:60px;
     height:60px;
     /* increase width 10 times, height 2 times */
-    transform:scale(10,2);
+    /* transform:scale(10,2); */
     /* decreases the width in half and height in quarter */
     /* transform :scale(0.5,0.25); */
     /* flips the x-axis */
@@ -11,4 +11,51 @@
 /* flips the y-axis */
     /* transform :scale(1,-5); */
     /* transform:scaleY(-5); */
+    float:right;
+}
+
+.box{
+    background-color:purple;
+    height: 100px;
+    width: 100px;
+    display:inline-block;
+    margin:20px;
+}
+
+.skew-x-20{
+    transform:skewX(20deg);
+}
+.skew-x-neg-20{
+    /* transform:skewX(-20deg); */
+    animation: skew-horizontal 3s infinite;
+    animation-direction: alternate;
+
+}
+.skew-y-neg-20{
+    transform:skewY(-20deg);
+}
+.skew-y-neg-50{
+    transform:skewY(-50deg);
+    animation: skew-horizontal 1s infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes skew-horizontal{
+    0%{
+        transform:skewX(20deg);
+        opacity: 0.5%;
+    }
+    100%{
+        transform:skewX(-20deg);
+        opacity: 1%;
+    }
+}
+
+keyframes skew-vertical{
+    0%{
+        transform:skewX(20deg);
+    }
+    100%{
+        transform:skewX(-20deg);
+    }
 }
