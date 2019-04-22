@@ -59,3 +59,13 @@ keyframes skew-vertical{
         transform:skewX(-20deg);
     }
 }
+/* rotate */
+.rotateX{
+    transform:rotateX(50deg);
+}
+.rotateX{
+    transform:rotateY(50deg);
+}
+.rotateX{
+    transform:rotateZ(50deg);
+}
