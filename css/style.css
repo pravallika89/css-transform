@@ -20,6 +20,7 @@
     width: 100px;
     display:inline-block;
     margin:20px;
+   
 }
 
 .skew-x-20{
@@ -69,3 +70,26 @@ keyframes skew-vertical{
 .rotateX{
     transform:rotateZ(50deg);
 }
+/* translate */
+
+keyframes shimmy{
+    0%{
+        transform:translate(0,0);
+    }
+    100%{
+        transform:translate(20px,50px);
+    }
+}
+    .translate{
+        height: 100px;
+  width: 100px;
+  background-color: #3d9970;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  padding: 5px;
+  animation: shimmy 5s infinite;
+  animation-direction: alternate;
+    }
